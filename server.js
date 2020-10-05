@@ -37,7 +37,5 @@ io.on('connection', socket => {
 })
 
 //Listen to Server
-server.listen(3030, () => {
-    console.log('Connected')
-});
+server.listen(process.env.PORT || 3030);
 
